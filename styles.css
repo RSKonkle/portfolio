@@ -1,5 +1,24 @@
 /* DEFAULT STYLE SHEET */
 
+/* COLOR PALETTE
+#0F392D – Deep Green
+#A7D0B8 – Soft Green
+#74B4D8 – Muted Blue
+#E4C2B0 – Peachy Beige
+#311C17 – Dark Brown
+*/
+
+/* Next:
+Touch-up header with About, Projects, and Contact sections. 
+Determine color palette.
+Add Hero section: eye-catching image and call-to-action with "Reagan Konkle. Designer and Webpage Architect" or something similar.
+Projects section: project-glimpse tiles with interactive hover effects and perhaps a horizontal scroll effect.
+Skills section: highlight tech-stack and coding skills and expertise
+About Me section
+Contact section
+Footer
+*/
+
 body {
     margin: 0; /* removes whitespace on edges of document */
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
