@@ -34,17 +34,28 @@ body {
     /* HEADER FLEX */
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
     /* HEADER DESIGN */
     width: auto;
     height: 60px;
     background-color: #0F392D;
     margin: 0;
+    padding: 0 400px;
 }
 
 
 .title {
-    color: white;
-    font-size: 24px;
-    margin: 20px;
+    color: white; /* change to either beige or light green */
+    font-size: 22px;
+}
+
+.links {
+    display: flex;
+}
+
+.link {
+    color: white; /* change to either beige or light green */
+    font-size: 18px;
+    padding: 12px;
 }
