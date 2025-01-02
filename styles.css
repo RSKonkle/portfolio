@@ -33,7 +33,6 @@ body {
 .header {
     /* HEADER FLEX */
     display: flex;
-    justify-content: center;
     align-items: center;
 
     /* HEADER DESIGN */
@@ -47,4 +46,5 @@ body {
 .title {
     color: white;
     font-size: 24px;
+    margin: 20px;
 }
