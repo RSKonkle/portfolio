@@ -30,7 +30,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header-section {
     /* HEADER FLEX */
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ body {
 
 
 .title {
-    color: white; /* change to either beige or light green */
+    color: #E4C2B0;
     font-size: 22px;
 }
 
@@ -55,7 +55,44 @@ body {
 }
 
 .link {
-    color: white; /* change to either beige or light green */
+    color: #E4C2B0;
     font-size: 18px;
     padding: 12px;
+}
+
+.hero-section {
+    position: relative; /* Ensures the gradient overlays properly */
+}
+
+.hero-section::before {
+    content: ""; /* Creates a pseudo-element for the gradient */
+    position: absolute; /* Positions the gradient over the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px; /* Adjust height for fade effect */
+    background: linear-gradient(to bottom, #0F392D, transparent); /* Gradient fading from header color */
+    z-index: 1; /* Places the gradient above the image */
+}
+
+.hero-section img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    z-index: 0; /* Ensures the image is behind the gradient */
+    position: relative;
+}
+
+.hero-box {
+    position: absolute; /* Position it over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    height: 600px;
+    width: 1200px;
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    background-color: rgba(15, 57, 45, 0.8); /* Transparent dark green */
+    color: white; /* Text color */
+    padding: 20px 40px; /* Add some padding for spacing */
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Add a shadow for depth */
 }
