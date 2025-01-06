@@ -1,11 +1,11 @@
 /* DEFAULT STYLE SHEET */
 
 /* COLOR PALETTE
-#0F392D – Deep Green
-#A7D0B8 – Soft Green
+#124331 - Brunswick Green
+#DADADA - Platinum
+#4D8960 - Sea Green
+#86A935 - Apple Green (brat green)
 #74B4D8 – Muted Blue
-#E4C2B0 – Peachy Beige
-#311C17 – Dark Brown
 */
 
 /* SITE INSPO 
@@ -19,9 +19,8 @@ Consider darker green for background so site appears in 'dark mode' while still 
 Add Hero section: eye-catching image and call-to-action with "Reagan Konkle. Designer and Webpage Architect" or something similar.
 Projects section: project-glimpse tiles with interactive hover effects and perhaps a horizontal scroll effect.
 Skills section: highlight tech-stack and coding skills and expertise
-About Me section
-Contact section
-Footer
+About Me section - add social links, bio, picture of me
+Footer - add social links
 */
 
 body {
@@ -37,15 +36,15 @@ body {
 
     /* HEADER DESIGN */
     width: auto;
-    height: 60px;
-    background-color: #0F392D;
+    height: 80px;
+    background-color: #124331;
     margin: 0;
     padding: 0 400px;
 }
 
 
 .title {
-    color: #E4C2B0;
+    color: #DADADA;
     font-size: 22px;
 }
 
@@ -54,7 +53,36 @@ body {
 }
 
 .link {
-    color: #E4C2B0;
+    color: #DADADA;
     font-size: 18px;
     padding: 12px;
+}
+
+.hero-section {
+    height: 800px;
+    background-color: #124331;
+}
+
+.skills-section {
+    height: 400px;
+    background-color: #4D8960;
+}
+
+.projects-section {
+    height: 600px;
+    background-color: #DADADA;
+}
+
+.aboutme-section {
+    height: 600px;
+    background-color: #124331;
+}
+
+.footer-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    background-color: #124331;
+    color: #DADADA;
 }
