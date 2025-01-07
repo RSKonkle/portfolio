@@ -62,8 +62,33 @@ body {
 
 /* HERO STYLES */
 .hero-section {
-    height: 800px;
+    /* HERO DESIGN */
     background-color: #124331;
+
+    /* HERO BACKGROUND */
+    background-image: url('./images/layered-waves-haikei.svg'); /* Path to your SVG file */
+    background-size: cover; /* Ensures it covers the entire section */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents tiling */
+}
+
+.hero-text-box {
+    color: #DADADA;
+    padding: 400px;
+}
+
+.hero-name {
+    color: #4D8960;
+    font-size: 48px;
+}
+
+.hero-heading {
+    font-size: 36px;
+}
+
+.hero-subheading {
+    font-size: 24px;
+    width: 600px;
 }
 
 /* SKILLS STYLES */
