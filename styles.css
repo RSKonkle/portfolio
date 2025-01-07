@@ -2,6 +2,7 @@
 
 /* COLOR PALETTE
 #124331 - Brunswick Green
+#0e3627 - Dark Brunswick Green
 #DADADA - Platinum
 #4D8960 - Sea Green
 #86A935 - Apple Green (brat green)
@@ -63,7 +64,7 @@ body {
 /* HERO STYLES */
 .hero-section {
     /* HERO DESIGN */
-    background-color: #124331;
+    background-color: #0e3627;
 
     /* HERO BACKGROUND */
     background-image: url('./images/layered-waves-haikei.svg'); /* Path to your SVG file */
@@ -72,23 +73,64 @@ body {
     background-repeat: no-repeat; /* Prevents tiling */
 }
 
-.hero-text-box {
+.hero-content {
+    display: flex;
+    justify-content: space-between;
     color: #DADADA;
-    padding: 400px;
+    padding: 200px 0 600px 0;
+}
+
+.profile-photo {
+    width: 160px; /* Adjust size as needed */
+    height: 160px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #DADADA; /* Optional: Add a border for polish */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    display: block;
+    margin: 0 auto 18px auto;
+}
+
+.hero-left {
+    padding-left: 400px;
+}
+
+.hero-right {
+    width: 800px;
+    padding-right: 400px;
 }
 
 .hero-name {
     color: #4D8960;
-    font-size: 48px;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 36px 0 24px 0;
 }
 
 .hero-heading {
     font-size: 36px;
+    font-weight: bold;
 }
 
 .hero-subheading {
     font-size: 24px;
-    width: 600px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-button {
+    padding: 12px;
+    margin: 6px;
+    font-size: 24px;
+    border: none;
+    background-color: #86A935;
+    color: #DADADA;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
 }
 
 /* SKILLS STYLES */
@@ -114,9 +156,9 @@ body {
 }
 
 .ts-title {
-    color: black;
+    color: #0e3627;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 36px;
 }
 
 .ts-tile {
@@ -126,7 +168,7 @@ body {
 
     height: 100px;
     width: 100px;
-    color: black;
+    color: #0e3627;
     font-weight: bold;
 }
 
@@ -139,7 +181,7 @@ body {
 /* ABOUT ME STYLES */
 .aboutme-section {
     height: 600px;
-    background-color: #124331;
+    background-color: #0e3627;
 }
 
 /* FOOTER STYLES */
