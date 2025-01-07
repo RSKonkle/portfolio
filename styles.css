@@ -18,7 +18,6 @@ Recycl8
 */
 
 /* Next:
-Consider darker green for background so site appears in 'dark mode' while still maintaining green-hue.
 Add Hero section: eye-catching image and call-to-action with "Reagan Konkle. Designer and Webpage Architect" or something similar.
 Projects section: project-glimpse tiles with interactive hover effects and perhaps a horizontal scroll effect.
 Skills section: highlight tech-stack and coding skills and expertise
@@ -31,6 +30,7 @@ body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
+/* HEADER STYLES */
 .header-section {
     /* HEADER FLEX */
     display: flex;
@@ -45,42 +45,80 @@ body {
     padding: 0 400px;
 }
 
-
-.title {
+.header-title {
     color: #DADADA;
     font-size: 22px;
 }
 
-.links {
+.header-links {
     display: flex;
 }
 
-.link {
+.header-link {
     color: #DADADA;
     font-size: 18px;
     padding: 12px;
 }
 
+/* HERO STYLES */
 .hero-section {
     height: 800px;
     background-color: #124331;
 }
 
+/* SKILLS STYLES */
 .skills-section {
-    height: 400px;
+    /* SKILLS FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    /* SKILLS DESIGN */
+    height: 300px;
+    padding-top: 10px;
     background-color: #4D8960;
 }
 
+.tech-stack {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 180px;
+    width: 1200px;
+}
+
+.ts-title {
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.ts-tile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    height: 100px;
+    width: 100px;
+    color: black;
+    font-weight: bold;
+}
+
+/* PROJECTS STYLES */
 .projects-section {
     height: 600px;
     background-color: #DADADA;
 }
 
+/* ABOUT ME STYLES */
 .aboutme-section {
     height: 600px;
     background-color: #124331;
 }
 
+/* FOOTER STYLES */
 .footer-section {
     display: flex;
     align-items: center;
