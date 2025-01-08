@@ -131,6 +131,30 @@ body {
     color: #DADADA;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+
+    /* BUTTON HIGHLIGHT */
+    position: relative; /* Ensure the button is the positioning context for ::after */
+    cursor: pointer;
+    overflow: hidden; /* Prevent ::after from spilling out */
+    transition: background-color 0.3s ease; /* Smooth transition for base color */
+}
+
+.cta-button::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 49, 24, 0.473); /* Highlight color (white with transparency) */
+    transform: scale(0); /* Start invisible (scaled down) */
+    transform-origin: center;
+    transition: transform 0.1s ease; /* Smooth grow effect */
+    border-radius: inherit; /* Match the button's border radius */
+}
+
+.cta-button:hover::after {
+    transform: scale(1); /* Expand to full size on hover */
 }
 
 /* SKILLS STYLES */
