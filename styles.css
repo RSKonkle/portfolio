@@ -125,7 +125,7 @@ body {
 
 .cta-button {
     padding: 12px;
-    margin: 6px;
+    margin: 8px;
     font-size: 24px;
     border: none;
     background-color: #4D8960;
@@ -167,7 +167,7 @@ body {
     justify-content: center;
 
     /* SKILLS DESIGN */
-    height: 300px;
+    padding: 160px 0;
     background-color: #4D8960;
 }
 
@@ -205,7 +205,7 @@ body {
 
 /* ABOUT ME STYLES */
 .about-section {
-    padding: 40px 20px;
+    padding: 80px 20px;
     background-color: #0e3627;
     color: #FFFFFF;
     text-align: center;
@@ -236,11 +236,17 @@ body {
 .about-bio {
     max-width: 600px;
     text-align: left;
+    border-left: 1px solid #DADADA;
+    padding-left: 28px;
 }
 
 .about-bio .highlight {
     color: #7BC74D; /* Light green for emphasis */
     font-weight: bold;
+}
+
+.about-bio .underlined {
+    text-decoration: underline 1px #7BC74D;
 }
 
 /* FOOTER STYLES */
