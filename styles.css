@@ -206,7 +206,7 @@ body {
 /* ABOUT ME STYLES */
 .about-section {
     padding: 40px 20px;
-    background-color: #1F2F2A;
+    background-color: #0e3627;
     color: #FFFFFF;
     text-align: center;
 }
@@ -252,15 +252,15 @@ body {
 .about-email input, .about-email textarea {
     margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #7BC74D;
+    border: 1px solid #86A935;
     border-radius: 5px;
     font-size: 1rem;
 }
 
 .about-email button {
     padding: 10px;
-    background-color: #7BC74D;
-    color: #1F2F2A;
+    background-color: #86A935;
+    color: #0e3627;
     border: none;
     border-radius: 5px;
     cursor: pointer;
