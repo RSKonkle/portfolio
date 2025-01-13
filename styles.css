@@ -43,12 +43,12 @@ body {
     height: 80px;
     background-color: #124331;
     margin: 0;
-    padding: 0 400px;
+    padding: 0 22vw;
 }
 
 .header-title {
     color: #DADADA;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 .header-links {
@@ -57,7 +57,7 @@ body {
 
 .header-link {
     color: #DADADA;
-    font-size: 18px;
+    font-size: 20px;
     padding: 12px;
 }
 
@@ -65,6 +65,8 @@ body {
 .hero-section {
     /* HERO DESIGN */
     background-color: #0e3627;
+    position: relative;
+    height: calc(100vh - 80px);
 
     /* HERO BACKGROUND */
     background-image: url('./images/layered-waves-haikei.svg'); /* Path to your SVG file */
@@ -75,9 +77,17 @@ body {
 
 .hero-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     color: #DADADA;
-    padding: 200px 0 600px 0;
+    padding: 20vh 0;
+}
+
+.hero-left {
+    padding: 0 60px 0 0;
+}
+
+.hero-right {
+    max-width: 800px;
 }
 
 .profile-photo {
@@ -89,21 +99,12 @@ body {
     border: 3px solid #DADADA; /* Optional: Add a border for polish */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
     display: block;
-    margin: 0 auto 18px auto;
-}
-
-.hero-left {
-    padding-left: 400px;
-}
-
-.hero-right {
-    width: 800px;
-    padding-right: 400px;
+    margin: 0 auto 22px auto;
 }
 
 .hero-name {
     color: #4D8960;
-    font-size: 80px;
+    font-size: 4.5vw;
     font-weight: bold;
     padding: 36px 0 24px 0;
 }
@@ -127,7 +128,7 @@ body {
     margin: 6px;
     font-size: 24px;
     border: none;
-    background-color: #86A935;
+    background-color: #4D8960;
     color: #DADADA;
     border-radius: 8px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
