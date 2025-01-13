@@ -204,9 +204,71 @@ body {
 }
 
 /* ABOUT ME STYLES */
-.aboutme-section {
-    height: 600px;
-    background-color: #0e3627;
+.about-section {
+    padding: 40px 20px;
+    background-color: #1F2F2A;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-image {
+    padding-top: 60px;
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    margin-right: 20px;
+    object-fit: cover;
+    object-position: center bottom;
+}
+
+.about-bio {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-bio .highlight {
+    color: #7BC74D; /* Light green for emphasis */
+    font-weight: bold;
+}
+
+.about-email form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.about-email input, .about-email textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #7BC74D;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.about-email button {
+    padding: 10px;
+    background-color: #7BC74D;
+    color: #1F2F2A;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.about-email button:hover {
+    background-color: #61A63F; /* Slightly darker green on hover */
 }
 
 /* FOOTER STYLES */
