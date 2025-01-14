@@ -199,8 +199,52 @@ body {
 
 /* PROJECTS STYLES */
 .projects-section {
-    height: 600px;
     background-color: #DADADA;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-content {
+    height: 50vh;
+    width: 70vw;
+    padding-bottom: 12vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-section h1 {
+    color: #0e3627;
+    padding-top: 12vh;
+    font-size: 36px;
+}
+
+.proj-tile {
+    background-color: #124331;
+    color: #DADADA;
+    position: relative;
+    border-radius: 8px;
+
+    height: 40vh;
+    width: 20vw;
+}
+
+.proj-tile-footer {
+    position: absolute;
+    bottom: 0px;
+    height: 8vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.348);
+    border-radius: 0 0 8px 8px;
+    color: #124331;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ABOUT ME STYLES */
