@@ -231,6 +231,38 @@ body {
 
     height: 40vh;
     width: 20vw;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+
+    position: relative; /* Ensure the button is the positioning context for ::after */
+    cursor: pointer;
+    overflow: hidden; /* Prevent ::after from spilling out */
+    transition: background-color 0.3s ease; /* Smooth transition for base color */
+}
+
+.proj-tile::after {
+    content: ""; /* Required for pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* Highlight color (white with transparency) */
+    transform: scale(0); /* Start invisible (scaled down) */
+    transform-origin: center;
+    transition: transform 0.1s ease; /* Smooth grow effect */
+    border-radius: inherit; /* Match the button's border radius */
+    pointer-events: none; /* Prevent blocking clicks */
+}
+
+.proj-tile:hover::after {
+    transform: scale(1);
+}
+
+.proj-tile img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px;
 }
 
 .proj-tile-footer {
@@ -238,13 +270,14 @@ body {
     bottom: 0px;
     height: 8vh;
     width: 20vw;
-    background-color: rgba(255, 255, 255, 0.348);
+    background-color: #124331;
     border-radius: 0 0 8px 8px;
-    color: #124331;
+    color: #DADADA;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 
 /* ABOUT ME STYLES */
