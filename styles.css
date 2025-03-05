@@ -296,13 +296,16 @@ body {
 
 .about-image {
     padding: 0 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-image img {
     width: 200px;
     height: 200px;
     border-radius: 20%;
-    margin-right: 20px;
     object-fit: cover;
     object-position: center bottom;
     border: 4px solid var(--c-platinum);
@@ -333,14 +336,26 @@ body {
     text-decoration: underline 1px var(--c-apple-green);
 }
 
+.about-image span {
+    color: var(--c-apple-green);
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+}
+
 .socials {
-    padding-top: 20px;
+    padding: 10px 0 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .socials img {
     height: 40px;
     width: 40px;
     border: none;
+    margin: auto;
 }
 
 /* ==================================================
