@@ -333,6 +333,16 @@ body {
     text-decoration: underline 1px var(--c-apple-green);
 }
 
+.socials {
+    padding-top: 20px;
+}
+
+.socials img {
+    height: 40px;
+    width: 40px;
+    border: none;
+}
+
 /* ==================================================
     FOOTER SECTION
 ================================================== */
