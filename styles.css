@@ -158,22 +158,8 @@ body {
     transition: background-color 0.3s ease; /* Smooth transition for base color */
 }
 
-.cta-button::after {
-    content: ""; /* Required for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(3, 49, 24, 0.473);
-    transform: scale(0); /* Start invisible (scaled down) */
-    transform-origin: center;
-    transition: transform 0.1s ease; /* Smooth grow effect */
-    border-radius: inherit; /* Match the button's border radius */
-}
-
-.cta-button:hover::after {
-    transform: scale(1); /* Expand to full size on hover */
+.cta-button:hover {
+    background-color: var(--c-dark-brunswick);
 }
 
 /* ==================================================
@@ -258,23 +244,9 @@ body {
     transition: background-color 0.3s ease; /* Smooth transition for base color */
 }
 
-.proj-tile::after {
-    content: ""; /* Required for pseudo-element */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3); /* Highlight color (white with transparency) */
-    transform: scale(0); /* Start invisible (scaled down) */
-    transform-origin: center;
-    transition: transform 0.1s ease; /* Smooth grow effect */
-    border-radius: inherit; /* Match the button's border radius */
-    pointer-events: none; /* Prevent blocking clicks */
-}
-
-.proj-tile:hover::after {
-    transform: scale(1);
+.proj-tile:hover {
+    height: 41vh;
+    width: 21vw;
 }
 
 .proj-tile img {
@@ -288,7 +260,7 @@ body {
     position: absolute;
     bottom: 0px;
     height: 8vh;
-    width: 20vw;
+    width: 100%;
     background-color: var(--c-brunswick);
     border-radius: 0 0 8px 8px;
     color: var(--c-platinum);
