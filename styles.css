@@ -66,6 +66,11 @@ body {
     padding: 12px;
 }
 
+.header-link a {
+    text-decoration: none;
+    color: var(--c-platinum);
+}
+
 /* ==================================================
     HERO SECTION
 ================================================== */
@@ -73,7 +78,7 @@ body {
     /* HERO DESIGN */
     background-color: var(--c-dark-brunswick);
     position: relative;
-    height: calc(100vh - 80px);
+    height: 1000px;
 
     /* HERO BACKGROUND */
     background-image: url('./images/layered-waves-haikei.svg'); /* Path to your SVG file */
@@ -85,12 +90,14 @@ body {
 .hero-content {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin: auto;
     color: var(--c-platinum);
-    padding: 20vh;
+    padding: 200px 0 400px;
 }
 
 .hero-left {
-    padding: 0 60px;
+    padding: 0 60px 0 20px;
 }
 
 .hero-right {
@@ -111,27 +118,30 @@ body {
 
 .hero-name {
     color: var(--c-sea-green);
-    font-size: 4.5vw;
+    font-size: 5em;
     font-weight: bold;
-    padding: 36px 0 24px 0;
+    padding: 30px 0 50px 0;
 }
 
 .hero-heading {
-    font-size: 36px;
+    font-size: 2em;
     font-weight: bold;
     padding: 12px 0;
 }
 
 .hero-subheading {
-    font-size: 24px;
+    font-size: 1.6em;
 }
 
 .cta {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .cta-button {
+    width: 220px;
     padding: 12px;
     margin: 8px;
     font-size: 24px;
@@ -169,12 +179,14 @@ body {
 /* ==================================================
     SKILLS SECTION
 ================================================== */
-.skills-section {
+#skills-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 80px 0 160px;
+    padding: 120px 0 250px;
+
+    margin: auto;
     background-color: var(--c-sea-green);
 }
 
@@ -182,7 +194,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 180px;
+    height: 200px;
     width: 1200px;
 }
 
@@ -206,8 +218,9 @@ body {
 /* ==================================================
     PROJECTS SECTION
 ================================================== */
-.projects-section {
+#projects-section {
     background-color: var(--c-platinum);
+    padding-bottom: 200px;
 
     display: flex;
     flex-direction: column;
@@ -221,11 +234,11 @@ body {
     padding-bottom: 12vh;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
-.projects-section h1 {
+#projects-section h1 {
     color: var(--c-dark-brunswick);
     padding: 12vh 0;
     font-size: 36px;
@@ -289,11 +302,16 @@ body {
 /* ==================================================
     ABOUT-ME SECTION
 ================================================== */
-.about-section {
-    padding: 80px 20px;
+#about-section {
+    padding: 200px 20px;
     background-color: var(--c-dark-brunswick);
     color: var(--c-platinum);
     text-align: center;
+
+    background-image: url('./images/polygon-scatter-haikei.svg');
+    background-size: cover; /* Ensures it covers the entire section */
+    background-position: center; /* Centers the background */
+    background-repeat: no-repeat; /* Prevents tiling */
 }
 
 .about-row {
@@ -305,7 +323,7 @@ body {
 }
 
 .about-image {
-    padding: 60px 20px 0 0;
+    padding: 0 20px 0 0;
 }
 
 .about-image img {
@@ -323,6 +341,15 @@ body {
     text-align: left;
     border-left: 1px solid var(--c-platinum);
     padding-left: 28px;
+}
+
+.about-bio h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about-bio p {
+    margin-bottom: 20px;
 }
 
 .about-bio .highlight {
